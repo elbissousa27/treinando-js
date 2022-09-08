@@ -4,14 +4,20 @@ const cor = document.querySelector('#div');
 
 cor.classList.add('azul');
 
-function sla(){
+// function sla(){
+//     cor.classList.remove('vermelho');
+//     cor.classList.add('azul');
+// }
+// function sla2(){
+//     cor.classList.remove('azul');
+//     cor.classList.add('vermelho');
+// }
+
+botao.addEventListener('click', () => {
     cor.classList.remove('vermelho');
     cor.classList.add('azul');
-}
-function sla2(){
+});
+botao2.addEventListener('click', () => {
     cor.classList.remove('azul');
     cor.classList.add('vermelho');
-}
-
-botao.addEventListener('click', sla);
-botao2.addEventListener('click', sla2);
+});
